@@ -1,0 +1,33 @@
+```html
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="my-4">Document List</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Document Name</th>
+                <th scope="col">Similarity Score</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for document in documents %}
+            <tr>
+                <th scope="row">{{ forloop.counter }}</th>
+                <td>{{ document.name }}</td>
+                <td>{{ document.similarity_score }}</td>
+                <td>
+                    <a href="{% url 'app:detail' document.id %}" class="btn btn-primary">View</a>
+                    <a href="{% url 'app:edit' document.id %}" class="btn btn-warning">Edit</a>
+                    <a href="{% url 'app:delete' document.id %}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+```
