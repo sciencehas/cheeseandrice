@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Similarity App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Document Similarity App</h1>
+        <p>This application allows you to upload one or multiple word doc/pdf files and process them for similarities.</p>
+        <a href="{% url 'upload' %}" class="btn btn-primary">Upload Documents</a>
+        <a href="{% url 'list' %}" class="btn btn-secondary">View Processed Documents</a>
+    </div>
+    <script src="{% static 'app/js/scripts.js' %}"></script>
+</body>
+</html>
