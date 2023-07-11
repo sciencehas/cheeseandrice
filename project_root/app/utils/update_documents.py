@@ -1,4 +1,3 @@
-```python
 from django.core.files import File
 from app.models import Document
 
@@ -27,4 +26,3 @@ def create_new_document(content, user):
     new_document = Document(content=content, user=user)
     new_document.save()
     return new_document.id
-```

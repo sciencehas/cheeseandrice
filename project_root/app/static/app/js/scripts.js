@@ -1,4 +1,3 @@
-```javascript
 document.addEventListener('DOMContentLoaded', (event) => {
     const uploadForm = document.getElementById('upload-form');
     const fileList = document.getElementById('file-list');
@@ -29,4 +28,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // TODO: Add AJAX call to update file and update detailView
     });
 });
-```

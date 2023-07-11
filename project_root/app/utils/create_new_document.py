@@ -1,4 +1,3 @@
-```python
 from django.core.files.storage import FileSystemStorage
 from app.models import Document
 
@@ -20,4 +19,3 @@ def create_new_document(user, text_content):
     new_document.save()
 
     return new_document
-```

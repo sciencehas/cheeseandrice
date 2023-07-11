@@ -1,4 +1,4 @@
-```python
+
 from sklearn.metrics.pairwise import cosine_similarity
 from app.utils.word_to_vector import vectorize_words
 
@@ -13,4 +13,3 @@ def get_top_similar_words(matrix, top_n=10):
         top_indices = row.argsort()[-top_n:]
         top_similar.append((idx, top_indices))
     return top_similar
-```

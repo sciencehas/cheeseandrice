@@ -1,4 +1,3 @@
-```python
 from django.urls import path
 from . import views
 
@@ -9,4 +8,3 @@ urlpatterns = [
     path('detail/<int:doc_id>/', views.detail, name='detail'),
     path('edit/<int:doc_id>/', views.edit, name='edit'),
 ]
-```

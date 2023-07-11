@@ -1,4 +1,3 @@
-```python
 from sklearn.metrics.pairwise import cosine_similarity
 from .calculate_similarity import calculate_similarity
 from .merge_data import merge_data
@@ -29,4 +28,3 @@ def find_similar_documents(documents, threshold=0.8):
         if similarity >= threshold:
             similar_documents.append((documents[i], documents[j], similarity))
     return similar_documents
-```

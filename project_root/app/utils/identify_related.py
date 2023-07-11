@@ -1,4 +1,3 @@
-```python
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -15,4 +14,3 @@ def identify_related_text_elements(document_list):
         related_text_elements[doc] = similar_items[1:]
 
     return related_text_elements
-```

@@ -1,4 +1,3 @@
-```python
 import numpy as np
 from .word_to_vector import WordToVector
 
@@ -13,4 +12,3 @@ class MergeData:
             vectors.append(vector)
         matrix = np.vstack(vectors)
         return matrix
-```

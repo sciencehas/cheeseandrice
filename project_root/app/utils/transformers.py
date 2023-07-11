@@ -1,4 +1,3 @@
-```python
 from sentence_transformers import SentenceTransformer
 
 class Transformer:
@@ -7,4 +6,3 @@ class Transformer:
 
     def encode(self, documents):
         return self.model.encode(documents)
-```

@@ -1,4 +1,3 @@
-```python
 import re
 import nltk
 from nltk.corpus import stopwords
@@ -33,4 +32,3 @@ def clean_data(text):
     final_tokens = [word for word in tokens if word not in stopwords.words('english')]
 
     return " ".join(final_tokens)
-```
